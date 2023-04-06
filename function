@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions In JavaScript</title>
+    <script src="02aprail.js"></script>
+</head>
+<body>
+
+<script>
+    function createReportcard(studentname, ageofstudent, fathername, mothername, rollno, studentclass, school, marksinmaths, marksinphysics, marksinhindi, marksinchemistry, marksincomputerscience) 
+    {
+        //my function is to create a report card of a student named shivanshu dwivedi .which is studing in class 11 in allahabad public school.
+        if(ageofstudent < 18)
+         {
+           var student = new Object();
+           student.studentname = studentname;
+           student.ageofstudent = ageofstudent;
+           student.fathername = fathername;
+           student.mothername = mothername;
+           student.rollno = rollno;
+           student.studentclass = studentclass;
+           student.school = school
+           return 'hii im shivanshu dwivedi';
+        }
+
+        else if(ageofstudent > 18)
+        {
+        return 'student is not a kid now';
+        }
+    
+    }
+        let ReportcardObject = createReportcard('shivanshu', 16, 'virendra prakash dwivedi', 'kanti dwivedi', 34, 11, 'allahabad public school',);
+        console.log(ReportcardObject);
+
+        
+</script>
+
+</body>
+</html>
